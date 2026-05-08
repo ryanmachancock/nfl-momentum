@@ -1,0 +1,566 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Momentum Analyzer" [ref=e8] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e9]: Momentum Analyzer
+        - button "NFL" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: NFL
+          - img [ref=e13]
+      - navigation [ref=e15]:
+        - link "Games" [ref=e16] [cursor=pointer]:
+          - /url: /nfl
+        - link "Stats" [ref=e17] [cursor=pointer]:
+          - /url: /nfl/stats
+        - link "Teams" [ref=e18] [cursor=pointer]:
+          - /url: /nfl/teams
+        - link "Search" [ref=e19] [cursor=pointer]:
+          - /url: /nfl/search
+          - img [ref=e20]
+          - generic [ref=e22]: Search
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e27]:
+        - link "NFL Momentum" [ref=e28] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e29]: NFL Momentum
+        - navigation [ref=e30]:
+          - link "Games" [ref=e31] [cursor=pointer]:
+            - /url: /nfl
+          - link "Stats" [ref=e32] [cursor=pointer]:
+            - /url: /nfl/stats
+          - link "Search" [ref=e33] [cursor=pointer]:
+            - /url: /search
+          - link "Change Sport" [ref=e34] [cursor=pointer]:
+            - /url: /
+      - main [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - heading "Momentum Statistics" [level=1] [ref=e38]
+            - paragraph [ref=e39]: Explore the most interesting NFL games by momentum patterns across all seasons
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]: Season
+              - combobox "Season" [ref=e43]:
+                - option "All Seasons" [selected]
+                - option "2025"
+                - option "2024"
+                - option "2023"
+                - option "2022"
+            - generic [ref=e44]:
+              - generic [ref=e45]: Category
+              - generic [ref=e46]:
+                - button "Biggest Swings" [ref=e47] [cursor=pointer]
+                - button "Wild Rides" [ref=e48] [cursor=pointer]
+                - button "Dominant Wins" [ref=e49] [cursor=pointer]
+                - button "Nail Biters" [ref=e50] [cursor=pointer]
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: 1,136
+              - generic [ref=e62]: Games Analyzed
+            - generic [ref=e63]:
+              - generic [ref=e64]: 67.87%
+              - generic [ref=e65]: Prediction Accuracy
+            - generic [ref=e66]:
+              - generic [ref=e67]: "771"
+              - generic [ref=e68]: Correct Predictions
+            - generic [ref=e69]:
+              - generic [ref=e70]: 629 - 507
+              - generic [ref=e71]: Home - Away Wins
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - generic [ref=e74]:
+                - heading "Biggest Swings" [level=2] [ref=e75]
+                - paragraph [ref=e76]: Games with the largest single momentum shifts
+              - generic [ref=e77]: 25 games
+            - table [ref=e79]:
+              - rowgroup [ref=e80]:
+                - row "Rank Season Matchup Score Max Swing Final Momentum Prediction" [ref=e81]:
+                  - columnheader "Rank" [ref=e82]
+                  - columnheader "Season" [ref=e83]
+                  - columnheader "Matchup" [ref=e84]
+                  - columnheader "Score" [ref=e85]
+                  - columnheader "Max Swing" [ref=e86]
+                  - columnheader "Final Momentum" [ref=e87]
+                  - columnheader "Prediction" [ref=e88]
+                  - columnheader [ref=e89]
+              - rowgroup [ref=e90]:
+                - row "#1 🏆 2025 Week 5 TEN @ ARI Oct 4, 2025 22 - 21 127.4 ARI +129.3 TEN +73.0 Wrong View" [ref=e91] [cursor=pointer]:
+                  - cell "#1 🏆" [ref=e92]:
+                    - generic [ref=e93]: "#1 🏆"
+                  - cell "2025 Week 5" [ref=e94]:
+                    - generic [ref=e95]: "2025"
+                    - generic [ref=e96]: Week 5
+                  - cell "TEN @ ARI Oct 4, 2025" [ref=e97]:
+                    - generic [ref=e98]: TEN @ ARI
+                    - generic [ref=e99]: Oct 4, 2025
+                  - cell "22 - 21" [ref=e100]:
+                    - generic [ref=e101]: 22 - 21
+                  - cell "127.4" [ref=e102]
+                  - cell "ARI +129.3 TEN +73.0" [ref=e103]:
+                    - generic [ref=e104]:
+                      - generic [ref=e105]: ARI +129.3
+                      - generic [ref=e106]: TEN +73.0
+                  - cell "Wrong" [ref=e107]
+                  - cell "View" [ref=e108]:
+                    - button "View" [ref=e109]
+                - row "#2 🥈 2023 Week 10 CLE @ BAL Nov 11, 2023 33 - 31 106.2 BAL +54.2 CLE +154.5 Correct View" [ref=e110] [cursor=pointer]:
+                  - cell "#2 🥈" [ref=e111]:
+                    - generic [ref=e112]: "#2 🥈"
+                  - cell "2023 Week 10" [ref=e113]:
+                    - generic [ref=e114]: "2023"
+                    - generic [ref=e115]: Week 10
+                  - cell "CLE @ BAL Nov 11, 2023" [ref=e116]:
+                    - generic [ref=e117]: CLE @ BAL
+                    - generic [ref=e118]: Nov 11, 2023
+                  - cell "33 - 31" [ref=e119]:
+                    - generic [ref=e120]: 33 - 31
+                  - cell "106.2" [ref=e121]
+                  - cell "BAL +54.2 CLE +154.5" [ref=e122]:
+                    - generic [ref=e123]:
+                      - generic [ref=e124]: BAL +54.2
+                      - generic [ref=e125]: CLE +154.5
+                  - cell "Correct" [ref=e126]
+                  - cell "View" [ref=e127]:
+                    - button "View" [ref=e128]
+                - row "#3 🥉 2024 Week 13 LAC @ ATL Nov 30, 2024 17 - 13 93.3 ATL +39.4 LAC +102.1 Correct View" [ref=e129] [cursor=pointer]:
+                  - cell "#3 🥉" [ref=e130]:
+                    - generic [ref=e131]: "#3 🥉"
+                  - cell "2024 Week 13" [ref=e132]:
+                    - generic [ref=e133]: "2024"
+                    - generic [ref=e134]: Week 13
+                  - cell "LAC @ ATL Nov 30, 2024" [ref=e135]:
+                    - generic [ref=e136]: LAC @ ATL
+                    - generic [ref=e137]: Nov 30, 2024
+                  - cell "17 - 13" [ref=e138]:
+                    - generic [ref=e139]: 17 - 13
+                  - cell "93.3" [ref=e140]
+                  - cell "ATL +39.4 LAC +102.1" [ref=e141]:
+                    - generic [ref=e142]:
+                      - generic [ref=e143]: ATL +39.4
+                      - generic [ref=e144]: LAC +102.1
+                  - cell "Correct" [ref=e145]
+                  - cell "View" [ref=e146]:
+                    - button "View" [ref=e147]
+                - row "#4 2022 Week 2 LAC @ KC Sep 14, 2022 24 - 27 91.7 KC +98.4 LAC +65.8 Correct View" [ref=e148] [cursor=pointer]:
+                  - cell "#4" [ref=e149]:
+                    - generic [ref=e150]: "#4"
+                  - cell "2022 Week 2" [ref=e151]:
+                    - generic [ref=e152]: "2022"
+                    - generic [ref=e153]: Week 2
+                  - cell "LAC @ KC Sep 14, 2022" [ref=e154]:
+                    - generic [ref=e155]: LAC @ KC
+                    - generic [ref=e156]: Sep 14, 2022
+                  - cell "24 - 27" [ref=e157]:
+                    - generic [ref=e158]: 24 - 27
+                  - cell "91.7" [ref=e159]
+                  - cell "KC +98.4 LAC +65.8" [ref=e160]:
+                    - generic [ref=e161]:
+                      - generic [ref=e162]: KC +98.4
+                      - generic [ref=e163]: LAC +65.8
+                  - cell "Correct" [ref=e164]
+                  - cell "View" [ref=e165]:
+                    - button "View" [ref=e166]
+                - row "#5 2024 Week 9 LA @ SEA Nov 2, 2024 26 - 20 91.0 SEA +98.2 LA +103.9 Correct View" [ref=e167] [cursor=pointer]:
+                  - cell "#5" [ref=e168]:
+                    - generic [ref=e169]: "#5"
+                  - cell "2024 Week 9" [ref=e170]:
+                    - generic [ref=e171]: "2024"
+                    - generic [ref=e172]: Week 9
+                  - cell "LA @ SEA Nov 2, 2024" [ref=e173]:
+                    - generic [ref=e174]: LA @ SEA
+                    - generic [ref=e175]: Nov 2, 2024
+                  - cell "26 - 20" [ref=e176]:
+                    - generic [ref=e177]: 26 - 20
+                  - cell "91.0" [ref=e178]
+                  - cell "SEA +98.2 LA +103.9" [ref=e179]:
+                    - generic [ref=e180]:
+                      - generic [ref=e181]: SEA +98.2
+                      - generic [ref=e182]: LA +103.9
+                  - cell "Correct" [ref=e183]
+                  - cell "View" [ref=e184]:
+                    - button "View" [ref=e185]
+                - row "#6 2023 Week 4 MIN @ CAR Sep 30, 2023 21 - 13 87.7 CAR +66.8 MIN +95.6 Correct View" [ref=e186] [cursor=pointer]:
+                  - cell "#6" [ref=e187]:
+                    - generic [ref=e188]: "#6"
+                  - cell "2023 Week 4" [ref=e189]:
+                    - generic [ref=e190]: "2023"
+                    - generic [ref=e191]: Week 4
+                  - cell "MIN @ CAR Sep 30, 2023" [ref=e192]:
+                    - generic [ref=e193]: MIN @ CAR
+                    - generic [ref=e194]: Sep 30, 2023
+                  - cell "21 - 13" [ref=e195]:
+                    - generic [ref=e196]: 21 - 13
+                  - cell "87.7" [ref=e197]
+                  - cell "CAR +66.8 MIN +95.6" [ref=e198]:
+                    - generic [ref=e199]:
+                      - generic [ref=e200]: CAR +66.8
+                      - generic [ref=e201]: MIN +95.6
+                  - cell "Correct" [ref=e202]
+                  - cell "View" [ref=e203]:
+                    - button "View" [ref=e204]
+                - row "#7 2024 Week 12 TEN @ HOU Nov 23, 2024 32 - 27 87.7 HOU +94.7 TEN +76.8 Wrong View" [ref=e205] [cursor=pointer]:
+                  - cell "#7" [ref=e206]:
+                    - generic [ref=e207]: "#7"
+                  - cell "2024 Week 12" [ref=e208]:
+                    - generic [ref=e209]: "2024"
+                    - generic [ref=e210]: Week 12
+                  - cell "TEN @ HOU Nov 23, 2024" [ref=e211]:
+                    - generic [ref=e212]: TEN @ HOU
+                    - generic [ref=e213]: Nov 23, 2024
+                  - cell "32 - 27" [ref=e214]:
+                    - generic [ref=e215]: 32 - 27
+                  - cell "87.7" [ref=e216]
+                  - cell "HOU +94.7 TEN +76.8" [ref=e217]:
+                    - generic [ref=e218]:
+                      - generic [ref=e219]: HOU +94.7
+                      - generic [ref=e220]: TEN +76.8
+                  - cell "Wrong" [ref=e221]
+                  - cell "View" [ref=e222]:
+                    - button "View" [ref=e223]
+                - row "#8 2024 Week 2 CIN @ KC Sep 14, 2024 25 - 26 87.5 KC +101.0 CIN +49.6 Correct View" [ref=e224] [cursor=pointer]:
+                  - cell "#8" [ref=e225]:
+                    - generic [ref=e226]: "#8"
+                  - cell "2024 Week 2" [ref=e227]:
+                    - generic [ref=e228]: "2024"
+                    - generic [ref=e229]: Week 2
+                  - cell "CIN @ KC Sep 14, 2024" [ref=e230]:
+                    - generic [ref=e231]: CIN @ KC
+                    - generic [ref=e232]: Sep 14, 2024
+                  - cell "25 - 26" [ref=e233]:
+                    - generic [ref=e234]: 25 - 26
+                  - cell "87.5" [ref=e235]
+                  - cell "KC +101.0 CIN +49.6" [ref=e236]:
+                    - generic [ref=e237]:
+                      - generic [ref=e238]: KC +101.0
+                      - generic [ref=e239]: CIN +49.6
+                  - cell "Correct" [ref=e240]
+                  - cell "View" [ref=e241]:
+                    - button "View" [ref=e242]
+                - row "#9 2025 Week 19 HOU @ PIT Jan 11, 2026 30 - 6 86.8 PIT +46.2 HOU +118.2 Correct View" [ref=e243] [cursor=pointer]:
+                  - cell "#9" [ref=e244]:
+                    - generic [ref=e245]: "#9"
+                  - cell "2025 Week 19" [ref=e246]:
+                    - generic [ref=e247]: "2025"
+                    - generic [ref=e248]: Week 19
+                  - cell "HOU @ PIT Jan 11, 2026" [ref=e249]:
+                    - generic [ref=e250]: HOU @ PIT
+                    - generic [ref=e251]: Jan 11, 2026
+                  - cell "30 - 6" [ref=e252]:
+                    - generic [ref=e253]: 30 - 6
+                  - cell "86.8" [ref=e254]
+                  - cell "PIT +46.2 HOU +118.2" [ref=e255]:
+                    - generic [ref=e256]:
+                      - generic [ref=e257]: PIT +46.2
+                      - generic [ref=e258]: HOU +118.2
+                  - cell "Correct" [ref=e259]
+                  - cell "View" [ref=e260]:
+                    - button "View" [ref=e261]
+                - row "#10 2024 Week 1 TEN @ CHI Sep 7, 2024 17 - 24 85.6 CHI +110.1 TEN +66.8 Correct View" [ref=e262] [cursor=pointer]:
+                  - cell "#10" [ref=e263]:
+                    - generic [ref=e264]: "#10"
+                  - cell "2024 Week 1" [ref=e265]:
+                    - generic [ref=e266]: "2024"
+                    - generic [ref=e267]: Week 1
+                  - cell "TEN @ CHI Sep 7, 2024" [ref=e268]:
+                    - generic [ref=e269]: TEN @ CHI
+                    - generic [ref=e270]: Sep 7, 2024
+                  - cell "17 - 24" [ref=e271]:
+                    - generic [ref=e272]: 17 - 24
+                  - cell "85.6" [ref=e273]
+                  - cell "CHI +110.1 TEN +66.8" [ref=e274]:
+                    - generic [ref=e275]:
+                      - generic [ref=e276]: CHI +110.1
+                      - generic [ref=e277]: TEN +66.8
+                  - cell "Correct" [ref=e278]
+                  - cell "View" [ref=e279]:
+                    - button "View" [ref=e280]
+                - row "#11 2022 Week 2 ARI @ LV Sep 17, 2022 29 - 23 85.5 LV +42.3 ARI +89.2 Correct View" [ref=e281] [cursor=pointer]:
+                  - cell "#11" [ref=e282]:
+                    - generic [ref=e283]: "#11"
+                  - cell "2022 Week 2" [ref=e284]:
+                    - generic [ref=e285]: "2022"
+                    - generic [ref=e286]: Week 2
+                  - cell "ARI @ LV Sep 17, 2022" [ref=e287]:
+                    - generic [ref=e288]: ARI @ LV
+                    - generic [ref=e289]: Sep 17, 2022
+                  - cell "29 - 23" [ref=e290]:
+                    - generic [ref=e291]: 29 - 23
+                  - cell "85.5" [ref=e292]
+                  - cell "LV +42.3 ARI +89.2" [ref=e293]:
+                    - generic [ref=e294]:
+                      - generic [ref=e295]: LV +42.3
+                      - generic [ref=e296]: ARI +89.2
+                  - cell "Correct" [ref=e297]
+                  - cell "View" [ref=e298]:
+                    - button "View" [ref=e299]
+                - row "#12 2023 Week 4 DEN @ CHI Sep 30, 2023 31 - 28 85.2 CHI +63.9 DEN +110.5 Correct View" [ref=e300] [cursor=pointer]:
+                  - cell "#12" [ref=e301]:
+                    - generic [ref=e302]: "#12"
+                  - cell "2023 Week 4" [ref=e303]:
+                    - generic [ref=e304]: "2023"
+                    - generic [ref=e305]: Week 4
+                  - cell "DEN @ CHI Sep 30, 2023" [ref=e306]:
+                    - generic [ref=e307]: DEN @ CHI
+                    - generic [ref=e308]: Sep 30, 2023
+                  - cell "31 - 28" [ref=e309]:
+                    - generic [ref=e310]: 31 - 28
+                  - cell "85.2" [ref=e311]
+                  - cell "CHI +63.9 DEN +110.5" [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic [ref=e314]: CHI +63.9
+                      - generic [ref=e315]: DEN +110.5
+                  - cell "Correct" [ref=e316]
+                  - cell "View" [ref=e317]:
+                    - button "View" [ref=e318]
+                - row "#13 2025 Week 14 CIN @ BUF Dec 6, 2025 34 - 39 84.9 BUF +132.9 CIN +64.4 Correct View" [ref=e319] [cursor=pointer]:
+                  - cell "#13" [ref=e320]:
+                    - generic [ref=e321]: "#13"
+                  - cell "2025 Week 14" [ref=e322]:
+                    - generic [ref=e323]: "2025"
+                    - generic [ref=e324]: Week 14
+                  - cell "CIN @ BUF Dec 6, 2025" [ref=e325]:
+                    - generic [ref=e326]: CIN @ BUF
+                    - generic [ref=e327]: Dec 6, 2025
+                  - cell "34 - 39" [ref=e328]:
+                    - generic [ref=e329]: 34 - 39
+                  - cell "84.9" [ref=e330]
+                  - cell "BUF +132.9 CIN +64.4" [ref=e331]:
+                    - generic [ref=e332]:
+                      - generic [ref=e333]: BUF +132.9
+                      - generic [ref=e334]: CIN +64.4
+                  - cell "Correct" [ref=e335]
+                  - cell "View" [ref=e336]:
+                    - button "View" [ref=e337]
+                - row "#14 2024 Week 4 CLE @ LV Sep 28, 2024 16 - 20 83.5 LV +60.2 CLE +84.9 Wrong View" [ref=e338] [cursor=pointer]:
+                  - cell "#14" [ref=e339]:
+                    - generic [ref=e340]: "#14"
+                  - cell "2024 Week 4" [ref=e341]:
+                    - generic [ref=e342]: "2024"
+                    - generic [ref=e343]: Week 4
+                  - cell "CLE @ LV Sep 28, 2024" [ref=e344]:
+                    - generic [ref=e345]: CLE @ LV
+                    - generic [ref=e346]: Sep 28, 2024
+                  - cell "16 - 20" [ref=e347]:
+                    - generic [ref=e348]: 16 - 20
+                  - cell "83.5" [ref=e349]
+                  - cell "LV +60.2 CLE +84.9" [ref=e350]:
+                    - generic [ref=e351]:
+                      - generic [ref=e352]: LV +60.2
+                      - generic [ref=e353]: CLE +84.9
+                  - cell "Wrong" [ref=e354]
+                  - cell "View" [ref=e355]:
+                    - button "View" [ref=e356]
+                - row "#15 2025 Week 5 KC @ JAX Oct 5, 2025 28 - 31 82.2 JAX +90.6 KC +74.2 Correct View" [ref=e357] [cursor=pointer]:
+                  - cell "#15" [ref=e358]:
+                    - generic [ref=e359]: "#15"
+                  - cell "2025 Week 5" [ref=e360]:
+                    - generic [ref=e361]: "2025"
+                    - generic [ref=e362]: Week 5
+                  - cell "KC @ JAX Oct 5, 2025" [ref=e363]:
+                    - generic [ref=e364]: KC @ JAX
+                    - generic [ref=e365]: Oct 5, 2025
+                  - cell "28 - 31" [ref=e366]:
+                    - generic [ref=e367]: 28 - 31
+                  - cell "82.2" [ref=e368]
+                  - cell "JAX +90.6 KC +74.2" [ref=e369]:
+                    - generic [ref=e370]:
+                      - generic [ref=e371]: JAX +90.6
+                      - generic [ref=e372]: KC +74.2
+                  - cell "Correct" [ref=e373]
+                  - cell "View" [ref=e374]:
+                    - button "View" [ref=e375]
+                - row "#16 2025 Week 10 JAX @ HOU Nov 8, 2025 29 - 36 82.0 HOU +151.3 JAX +51.4 Correct View" [ref=e376] [cursor=pointer]:
+                  - cell "#16" [ref=e377]:
+                    - generic [ref=e378]: "#16"
+                  - cell "2025 Week 10" [ref=e379]:
+                    - generic [ref=e380]: "2025"
+                    - generic [ref=e381]: Week 10
+                  - cell "JAX @ HOU Nov 8, 2025" [ref=e382]:
+                    - generic [ref=e383]: JAX @ HOU
+                    - generic [ref=e384]: Nov 8, 2025
+                  - cell "29 - 36" [ref=e385]:
+                    - generic [ref=e386]: 29 - 36
+                  - cell "82.0" [ref=e387]
+                  - cell "HOU +151.3 JAX +51.4" [ref=e388]:
+                    - generic [ref=e389]:
+                      - generic [ref=e390]: HOU +151.3
+                      - generic [ref=e391]: JAX +51.4
+                  - cell "Correct" [ref=e392]
+                  - cell "View" [ref=e393]:
+                    - button "View" [ref=e394]
+                - row "#17 2025 Week 7 HOU @ SEA Oct 19, 2025 19 - 27 81.2 SEA +72.3 HOU +94.7 Wrong View" [ref=e395] [cursor=pointer]:
+                  - cell "#17" [ref=e396]:
+                    - generic [ref=e397]: "#17"
+                  - cell "2025 Week 7" [ref=e398]:
+                    - generic [ref=e399]: "2025"
+                    - generic [ref=e400]: Week 7
+                  - cell "HOU @ SEA Oct 19, 2025" [ref=e401]:
+                    - generic [ref=e402]: HOU @ SEA
+                    - generic [ref=e403]: Oct 19, 2025
+                  - cell "19 - 27" [ref=e404]:
+                    - generic [ref=e405]: 19 - 27
+                  - cell "81.2" [ref=e406]
+                  - cell "SEA +72.3 HOU +94.7" [ref=e407]:
+                    - generic [ref=e408]:
+                      - generic [ref=e409]: SEA +72.3
+                      - generic [ref=e410]: HOU +94.7
+                  - cell "Wrong" [ref=e411]
+                  - cell "View" [ref=e412]:
+                    - button "View" [ref=e413]
+                - row "#18 2025 Week 13 MIN @ SEA Nov 29, 2025 0 - 26 79.3 SEA +89.3 MIN +36.3 Correct View" [ref=e414] [cursor=pointer]:
+                  - cell "#18" [ref=e415]:
+                    - generic [ref=e416]: "#18"
+                  - cell "2025 Week 13" [ref=e417]:
+                    - generic [ref=e418]: "2025"
+                    - generic [ref=e419]: Week 13
+                  - cell "MIN @ SEA Nov 29, 2025" [ref=e420]:
+                    - generic [ref=e421]: MIN @ SEA
+                    - generic [ref=e422]: Nov 29, 2025
+                  - cell "0 - 26" [ref=e423]:
+                    - generic [ref=e424]: 0 - 26
+                  - cell "79.3" [ref=e425]
+                  - cell "SEA +89.3 MIN +36.3" [ref=e426]:
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: SEA +89.3
+                      - generic [ref=e429]: MIN +36.3
+                  - cell "Correct" [ref=e430]
+                  - cell "View" [ref=e431]:
+                    - button "View" [ref=e432]
+                - row "#19 2023 Week 2 CLE @ PIT Sep 17, 2023 22 - 26 79.2 PIT +93.5 CLE +48.5 Correct View" [ref=e433] [cursor=pointer]:
+                  - cell "#19" [ref=e434]:
+                    - generic [ref=e435]: "#19"
+                  - cell "2023 Week 2" [ref=e436]:
+                    - generic [ref=e437]: "2023"
+                    - generic [ref=e438]: Week 2
+                  - cell "CLE @ PIT Sep 17, 2023" [ref=e439]:
+                    - generic [ref=e440]: CLE @ PIT
+                    - generic [ref=e441]: Sep 17, 2023
+                  - cell "22 - 26" [ref=e442]:
+                    - generic [ref=e443]: 22 - 26
+                  - cell "79.2" [ref=e444]
+                  - cell "PIT +93.5 CLE +48.5" [ref=e445]:
+                    - generic [ref=e446]:
+                      - generic [ref=e447]: PIT +93.5
+                      - generic [ref=e448]: CLE +48.5
+                  - cell "Correct" [ref=e449]
+                  - cell "View" [ref=e450]:
+                    - button "View" [ref=e451]
+                - row "#20 2024 Week 7 DET @ MIN Oct 19, 2024 31 - 29 78.8 MIN +98.0 DET +46.5 Wrong View" [ref=e452] [cursor=pointer]:
+                  - cell "#20" [ref=e453]:
+                    - generic [ref=e454]: "#20"
+                  - cell "2024 Week 7" [ref=e455]:
+                    - generic [ref=e456]: "2024"
+                    - generic [ref=e457]: Week 7
+                  - cell "DET @ MIN Oct 19, 2024" [ref=e458]:
+                    - generic [ref=e459]: DET @ MIN
+                    - generic [ref=e460]: Oct 19, 2024
+                  - cell "31 - 29" [ref=e461]:
+                    - generic [ref=e462]: 31 - 29
+                  - cell "78.8" [ref=e463]
+                  - cell "MIN +98.0 DET +46.5" [ref=e464]:
+                    - generic [ref=e465]:
+                      - generic [ref=e466]: MIN +98.0
+                      - generic [ref=e467]: DET +46.5
+                  - cell "Wrong" [ref=e468]
+                  - cell "View" [ref=e469]:
+                    - button "View" [ref=e470]
+                - row "#21 2023 Week 14 PHI @ DAL Dec 9, 2023 13 - 33 78.1 DAL +46.4 PHI +88.2 Wrong View" [ref=e471] [cursor=pointer]:
+                  - cell "#21" [ref=e472]:
+                    - generic [ref=e473]: "#21"
+                  - cell "2023 Week 14" [ref=e474]:
+                    - generic [ref=e475]: "2023"
+                    - generic [ref=e476]: Week 14
+                  - cell "PHI @ DAL Dec 9, 2023" [ref=e477]:
+                    - generic [ref=e478]: PHI @ DAL
+                    - generic [ref=e479]: Dec 9, 2023
+                  - cell "13 - 33" [ref=e480]:
+                    - generic [ref=e481]: 13 - 33
+                  - cell "78.1" [ref=e482]
+                  - cell "DAL +46.4 PHI +88.2" [ref=e483]:
+                    - generic [ref=e484]:
+                      - generic [ref=e485]: DAL +46.4
+                      - generic [ref=e486]: PHI +88.2
+                  - cell "Wrong" [ref=e487]
+                  - cell "View" [ref=e488]:
+                    - button "View" [ref=e489]
+                - row "#22 2025 Week 5 NYG @ NO Oct 4, 2025 14 - 26 78.0 NO +81.8 NYG +44.8 Correct View" [ref=e490] [cursor=pointer]:
+                  - cell "#22" [ref=e491]:
+                    - generic [ref=e492]: "#22"
+                  - cell "2025 Week 5" [ref=e493]:
+                    - generic [ref=e494]: "2025"
+                    - generic [ref=e495]: Week 5
+                  - cell "NYG @ NO Oct 4, 2025" [ref=e496]:
+                    - generic [ref=e497]: NYG @ NO
+                    - generic [ref=e498]: Oct 4, 2025
+                  - cell "14 - 26" [ref=e499]:
+                    - generic [ref=e500]: 14 - 26
+                  - cell "78.0" [ref=e501]
+                  - cell "NO +81.8 NYG +44.8" [ref=e502]:
+                    - generic [ref=e503]:
+                      - generic [ref=e504]: NO +81.8
+                      - generic [ref=e505]: NYG +44.8
+                  - cell "Correct" [ref=e506]
+                  - cell "View" [ref=e507]:
+                    - button "View" [ref=e508]
+                - row "#23 2023 Week 8 LV @ DET Oct 29, 2023 14 - 26 77.1 DET +49.7 LV +87.9 Wrong View" [ref=e509] [cursor=pointer]:
+                  - cell "#23" [ref=e510]:
+                    - generic [ref=e511]: "#23"
+                  - cell "2023 Week 8" [ref=e512]:
+                    - generic [ref=e513]: "2023"
+                    - generic [ref=e514]: Week 8
+                  - cell "LV @ DET Oct 29, 2023" [ref=e515]:
+                    - generic [ref=e516]: LV @ DET
+                    - generic [ref=e517]: Oct 29, 2023
+                  - cell "14 - 26" [ref=e518]:
+                    - generic [ref=e519]: 14 - 26
+                  - cell "77.1" [ref=e520]
+                  - cell "DET +49.7 LV +87.9" [ref=e521]:
+                    - generic [ref=e522]:
+                      - generic [ref=e523]: DET +49.7
+                      - generic [ref=e524]: LV +87.9
+                  - cell "Wrong" [ref=e525]
+                  - cell "View" [ref=e526]:
+                    - button "View" [ref=e527]
+                - row "#24 2023 Week 16 NYG @ PHI Dec 24, 2023 25 - 33 77.1 PHI +64.3 NYG +78.7 Wrong View" [ref=e528] [cursor=pointer]:
+                  - cell "#24" [ref=e529]:
+                    - generic [ref=e530]: "#24"
+                  - cell "2023 Week 16" [ref=e531]:
+                    - generic [ref=e532]: "2023"
+                    - generic [ref=e533]: Week 16
+                  - cell "NYG @ PHI Dec 24, 2023" [ref=e534]:
+                    - generic [ref=e535]: NYG @ PHI
+                    - generic [ref=e536]: Dec 24, 2023
+                  - cell "25 - 33" [ref=e537]:
+                    - generic [ref=e538]: 25 - 33
+                  - cell "77.1" [ref=e539]
+                  - cell "PHI +64.3 NYG +78.7" [ref=e540]:
+                    - generic [ref=e541]:
+                      - generic [ref=e542]: PHI +64.3
+                      - generic [ref=e543]: NYG +78.7
+                  - cell "Wrong" [ref=e544]
+                  - cell "View" [ref=e545]:
+                    - button "View" [ref=e546]
+                - row "#25 2023 Week 5 NYG @ MIA Oct 7, 2023 16 - 31 77.0 MIA +56.5 NYG +85.5 Wrong View" [ref=e547] [cursor=pointer]:
+                  - cell "#25" [ref=e548]:
+                    - generic [ref=e549]: "#25"
+                  - cell "2023 Week 5" [ref=e550]:
+                    - generic [ref=e551]: "2023"
+                    - generic [ref=e552]: Week 5
+                  - cell "NYG @ MIA Oct 7, 2023" [ref=e553]:
+                    - generic [ref=e554]: NYG @ MIA
+                    - generic [ref=e555]: Oct 7, 2023
+                  - cell "16 - 31" [ref=e556]:
+                    - generic [ref=e557]: 16 - 31
+                  - cell "77.0" [ref=e558]
+                  - cell "MIA +56.5 NYG +85.5" [ref=e559]:
+                    - generic [ref=e560]:
+                      - generic [ref=e561]: MIA +56.5
+                      - generic [ref=e562]: NYG +85.5
+                  - cell "Wrong" [ref=e563]
+                  - cell "View" [ref=e564]:
+                    - button "View" [ref=e565]
+      - paragraph [ref=e55]: NFL Momentum Analyzer - Data from nflfastR
+  - contentinfo [ref=e56]:
+    - paragraph [ref=e58]: NFL Momentum Analyzer - Data from nflfastR

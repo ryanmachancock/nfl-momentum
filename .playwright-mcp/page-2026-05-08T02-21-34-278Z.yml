@@ -1,0 +1,61 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Momentum Analyzer" [ref=e8] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e9]: Momentum Analyzer
+        - button "NFL" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: NFL
+          - img [ref=e13]
+      - button [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e22]:
+        - link "NFL Momentum" [ref=e23] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e24]: NFL Momentum
+        - navigation [ref=e25]:
+          - link "Games" [ref=e26] [cursor=pointer]:
+            - /url: /nfl
+          - link "Stats" [ref=e27] [cursor=pointer]:
+            - /url: /nfl/stats
+          - link "Search" [ref=e28] [cursor=pointer]:
+            - /url: /search
+          - link "Change Sport" [ref=e29] [cursor=pointer]:
+            - /url: /
+      - main [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - heading "NFL Momentum Analyzer" [level=1] [ref=e33]
+            - paragraph [ref=e34]: Visualize game momentum through play-by-play analysis
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - generic [ref=e38]: Season
+                - combobox "Season" [ref=e39]:
+                  - option "Select season..." [selected]
+              - generic [ref=e40]:
+                - generic [ref=e41]: Week
+                - combobox "Week" [disabled] [ref=e42]:
+                  - option "Select week..." [selected]
+            - generic [ref=e43]:
+              - img [ref=e45]
+              - paragraph [ref=e47]: Select a season and week to view games
+          - generic [ref=e48]:
+            - generic [ref=e49]:
+              - img [ref=e51]
+              - heading "Event-Based Scoring" [level=3] [ref=e53]
+              - paragraph [ref=e54]: Touchdowns, turnovers, sacks, and big plays all contribute to momentum shifts.
+            - generic [ref=e55]:
+              - img [ref=e57]
+              - heading "Decay Over Time" [level=3] [ref=e59]
+              - paragraph [ref=e60]: Momentum fades naturally as plays progress, so recent events matter more.
+            - generic [ref=e61]:
+              - img [ref=e63]
+              - heading "Streak Bonuses" [level=3] [ref=e65]
+              - paragraph [ref=e66]: Consecutive positive plays build momentum faster, reflecting real game dynamics.
+      - paragraph [ref=e69]: NFL Momentum Analyzer - Data from nflfastR
+  - contentinfo [ref=e70]:
+    - paragraph [ref=e72]: NFL Momentum Analyzer - Data from nflfastR

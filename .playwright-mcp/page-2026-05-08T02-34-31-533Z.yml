@@ -1,0 +1,194 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Momentum Analyzer" [ref=e8] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e9]: Momentum Analyzer
+        - button "NFL" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: NFL
+          - img [ref=e13]
+      - navigation [ref=e15]:
+        - link "Games" [ref=e16] [cursor=pointer]:
+          - /url: /nfl
+        - link "Stats" [ref=e17] [cursor=pointer]:
+          - /url: /nfl/stats
+        - link "Teams" [ref=e18] [cursor=pointer]:
+          - /url: /nfl/teams
+        - link "Search" [ref=e19] [cursor=pointer]:
+          - /url: /nfl/search
+          - img [ref=e20]
+          - generic [ref=e22]: Search
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - heading "NFL Teams" [level=1] [ref=e26]
+        - paragraph [ref=e27]: Explore team momentum statistics and game history
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - textbox "Search teams..." [ref=e30]
+          - img [ref=e31]
+        - combobox [ref=e33]:
+          - option "All Divisions" [selected]
+          - option "AFC East"
+          - option "AFC North"
+          - option "AFC South"
+          - option "AFC West"
+          - option "NFC East"
+          - option "NFC North"
+          - option "NFC South"
+          - option "NFC West"
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - heading "AFC East" [level=2] [ref=e36]
+          - generic [ref=e37]:
+            - button "BUF BUF Buffalo Bills" [ref=e38] [cursor=pointer]:
+              - img "BUF" [ref=e39]
+              - generic [ref=e40]: BUF
+              - generic [ref=e41]: Buffalo Bills
+            - button "MIA MIA Miami Dolphins" [ref=e42] [cursor=pointer]:
+              - img "MIA" [ref=e43]
+              - generic [ref=e44]: MIA
+              - generic [ref=e45]: Miami Dolphins
+            - button "NE NE New England Patriots" [ref=e46] [cursor=pointer]:
+              - img "NE" [ref=e47]
+              - generic [ref=e48]: NE
+              - generic [ref=e49]: New England Patriots
+            - button "NYJ NYJ New York Jets" [ref=e50] [cursor=pointer]:
+              - img "NYJ" [ref=e51]
+              - generic [ref=e52]: NYJ
+              - generic [ref=e53]: New York Jets
+        - generic [ref=e54]:
+          - heading "AFC North" [level=2] [ref=e55]
+          - generic [ref=e56]:
+            - button "BAL BAL Baltimore Ravens" [ref=e57] [cursor=pointer]:
+              - img "BAL" [ref=e58]
+              - generic [ref=e59]: BAL
+              - generic [ref=e60]: Baltimore Ravens
+            - button "CIN CIN Cincinnati Bengals" [ref=e61] [cursor=pointer]:
+              - img "CIN" [ref=e62]
+              - generic [ref=e63]: CIN
+              - generic [ref=e64]: Cincinnati Bengals
+            - button "CLE CLE Cleveland Browns" [ref=e65] [cursor=pointer]:
+              - img "CLE" [ref=e66]
+              - generic [ref=e67]: CLE
+              - generic [ref=e68]: Cleveland Browns
+            - button "PIT PIT Pittsburgh Steelers" [ref=e69] [cursor=pointer]:
+              - img "PIT" [ref=e70]
+              - generic [ref=e71]: PIT
+              - generic [ref=e72]: Pittsburgh Steelers
+        - generic [ref=e73]:
+          - heading "AFC South" [level=2] [ref=e74]
+          - generic [ref=e75]:
+            - button "HOU HOU Houston Texans" [ref=e76] [cursor=pointer]:
+              - img "HOU" [ref=e77]
+              - generic [ref=e78]: HOU
+              - generic [ref=e79]: Houston Texans
+            - button "IND IND Indianapolis Colts" [ref=e80] [cursor=pointer]:
+              - img "IND" [ref=e81]
+              - generic [ref=e82]: IND
+              - generic [ref=e83]: Indianapolis Colts
+            - button "JAX JAX Jacksonville Jaguars" [ref=e84] [cursor=pointer]:
+              - img "JAX" [ref=e85]
+              - generic [ref=e86]: JAX
+              - generic [ref=e87]: Jacksonville Jaguars
+            - button "TEN TEN Tennessee Titans" [ref=e88] [cursor=pointer]:
+              - img "TEN" [ref=e89]
+              - generic [ref=e90]: TEN
+              - generic [ref=e91]: Tennessee Titans
+        - generic [ref=e92]:
+          - heading "AFC West" [level=2] [ref=e93]
+          - generic [ref=e94]:
+            - button "DEN DEN Denver Broncos" [ref=e95] [cursor=pointer]:
+              - img "DEN" [ref=e96]
+              - generic [ref=e97]: DEN
+              - generic [ref=e98]: Denver Broncos
+            - button "KC KC Kansas City Chiefs" [ref=e99] [cursor=pointer]:
+              - img "KC" [ref=e100]
+              - generic [ref=e101]: KC
+              - generic [ref=e102]: Kansas City Chiefs
+            - button "LAC LAC Los Angeles Chargers" [ref=e103] [cursor=pointer]:
+              - img "LAC" [ref=e104]
+              - generic [ref=e105]: LAC
+              - generic [ref=e106]: Los Angeles Chargers
+            - button "LV LV Las Vegas Raiders" [ref=e107] [cursor=pointer]:
+              - img "LV" [ref=e108]
+              - generic [ref=e109]: LV
+              - generic [ref=e110]: Las Vegas Raiders
+        - generic [ref=e111]:
+          - heading "NFC East" [level=2] [ref=e112]
+          - generic [ref=e113]:
+            - button "DAL DAL Dallas Cowboys" [ref=e114] [cursor=pointer]:
+              - img "DAL" [ref=e115]
+              - generic [ref=e116]: DAL
+              - generic [ref=e117]: Dallas Cowboys
+            - button "NYG NYG New York Giants" [ref=e118] [cursor=pointer]:
+              - img "NYG" [ref=e119]
+              - generic [ref=e120]: NYG
+              - generic [ref=e121]: New York Giants
+            - button "PHI PHI Philadelphia Eagles" [ref=e122] [cursor=pointer]:
+              - img "PHI" [ref=e123]
+              - generic [ref=e124]: PHI
+              - generic [ref=e125]: Philadelphia Eagles
+            - button "WAS WAS Washington Commanders" [ref=e126] [cursor=pointer]:
+              - img "WAS" [ref=e127]
+              - generic [ref=e128]: WAS
+              - generic [ref=e129]: Washington Commanders
+        - generic [ref=e130]:
+          - heading "NFC North" [level=2] [ref=e131]
+          - generic [ref=e132]:
+            - button "CHI CHI Chicago Bears" [ref=e133] [cursor=pointer]:
+              - img "CHI" [ref=e134]
+              - generic [ref=e135]: CHI
+              - generic [ref=e136]: Chicago Bears
+            - button "DET DET Detroit Lions" [ref=e137] [cursor=pointer]:
+              - img "DET" [ref=e138]
+              - generic [ref=e139]: DET
+              - generic [ref=e140]: Detroit Lions
+            - button "GB GB Green Bay Packers" [ref=e141] [cursor=pointer]:
+              - img "GB" [ref=e142]
+              - generic [ref=e143]: GB
+              - generic [ref=e144]: Green Bay Packers
+            - button "MIN MIN Minnesota Vikings" [ref=e145] [cursor=pointer]:
+              - img "MIN" [ref=e146]
+              - generic [ref=e147]: MIN
+              - generic [ref=e148]: Minnesota Vikings
+        - generic [ref=e149]:
+          - heading "NFC South" [level=2] [ref=e150]
+          - generic [ref=e151]:
+            - button "ATL ATL Atlanta Falcons" [ref=e152] [cursor=pointer]:
+              - img "ATL" [ref=e153]
+              - generic [ref=e154]: ATL
+              - generic [ref=e155]: Atlanta Falcons
+            - button "CAR CAR Carolina Panthers" [ref=e156] [cursor=pointer]:
+              - img "CAR" [ref=e157]
+              - generic [ref=e158]: CAR
+              - generic [ref=e159]: Carolina Panthers
+            - button "NO NO New Orleans Saints" [ref=e160] [cursor=pointer]:
+              - img "NO" [ref=e161]
+              - generic [ref=e162]: "NO"
+              - generic [ref=e163]: New Orleans Saints
+            - button "TB TB Tampa Bay Buccaneers" [ref=e164] [cursor=pointer]:
+              - img "TB" [ref=e165]
+              - generic [ref=e166]: TB
+              - generic [ref=e167]: Tampa Bay Buccaneers
+        - generic [ref=e168]:
+          - heading "NFC West" [level=2] [ref=e169]
+          - generic [ref=e170]:
+            - button "ARI ARI Arizona Cardinals" [ref=e171] [cursor=pointer]:
+              - img "ARI" [ref=e172]
+              - generic [ref=e173]: ARI
+              - generic [ref=e174]: Arizona Cardinals
+            - button "LAR Los Angeles Rams" [ref=e175] [cursor=pointer]:
+              - generic [ref=e176]: LAR
+              - generic [ref=e177]: Los Angeles Rams
+            - button "SF SF San Francisco 49ers" [ref=e178] [cursor=pointer]:
+              - img "SF" [ref=e179]
+              - generic [ref=e180]: SF
+              - generic [ref=e181]: San Francisco 49ers
+            - button "SEA SEA Seattle Seahawks" [ref=e182] [cursor=pointer]:
+              - img "SEA" [ref=e183]
+              - generic [ref=e184]: SEA
+              - generic [ref=e185]: Seattle Seahawks
+  - contentinfo [ref=e186]:
+    - paragraph [ref=e188]: NFL Momentum Analyzer - Data from nflfastR

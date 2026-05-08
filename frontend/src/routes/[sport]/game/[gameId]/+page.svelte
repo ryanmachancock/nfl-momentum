@@ -42,6 +42,16 @@
 	$: sport = $page.params.sport;
 	$: sportName = sport?.toUpperCase() || 'NFL';
 
+	// Parse team names optimistically from gameId (format: 2024_01_DET_LAR)
+	$: gameIdParts = gameId?.split('_') || [];
+	$: optimisticAway = gameIdParts[2] || '';
+	$: optimisticHome = gameIdParts[3] || '';
+	$: pageTitle = momentum
+		? `${momentum.game.away_team} @ ${momentum.game.home_team} - ${sportName} Momentum`
+		: optimisticAway && optimisticHome
+			? `${optimisticAway} @ ${optimisticHome} - ${sportName} Momentum`
+			: `Game - ${sportName} Momentum`;
+
 	// Calculate final momentum values for predictions
 	$: finalMomentum = momentum?.data_points?.[momentum.data_points.length - 1];
 	$: finalHomeMomentum = finalMomentum?.home_momentum || 0;
@@ -71,10 +81,11 @@
 </script>
 
 <svelte:head>
+	<title>{pageTitle}</title>
 	{#if momentum}
-		<title>{momentum.game.away_team} @ {momentum.game.home_team} - {sportName} Momentum</title>
-	{:else}
-		<title>Game - {sportName} Momentum</title>
+		<meta property="og:title" content="{momentum.game.away_team} @ {momentum.game.home_team} - Week {momentum.game.week}" />
+		<meta property="og:description" content="{sportName} momentum analysis - Week {momentum.game.week}, {momentum.game.season} season" />
+		<meta property="og:type" content="article" />
 	{/if}
 </svelte:head>
 

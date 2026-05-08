@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy, createEventDispatcher } from 'svelte';
-	import { Chart, registerables } from 'chart.js';
+	import { Chart, LineController, LinearScale, PointElement, LineElement, CategoryScale, Filler, Tooltip, Legend } from 'chart.js';
 	import type { MomentumDataPoint, Game } from '$lib/api';
 	import { getTeamLogoUrl } from '$lib/teamLogos';
 
@@ -356,7 +356,7 @@
 	}
 
 	onMount(() => {
-		Chart.register(...registerables);
+		Chart.register(LineController, LinearScale, PointElement, LineElement, CategoryScale, Filler, Tooltip, Legend);
 		calculateQuarterScores();
 		createChart();
 	});
@@ -410,7 +410,7 @@
 <div class="chart-container rounded-xl overflow-hidden" style="background-color: {THEME.cardBg};">
 	<!-- Header -->
 	<div class="p-6 pb-4">
-		<div class="flex justify-between items-start">
+		<div class="flex flex-col sm:flex-row justify-between items-start gap-3">
 			<div>
 				<!-- Team logos and matchup -->
 				<div class="flex items-center gap-4 mb-2">

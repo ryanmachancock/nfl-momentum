@@ -57,19 +57,15 @@
 		try {
 			const seasonNum = selectedSeason === 'all' ? undefined : selectedSeason;
 
-			// Load top momentum games
-			const topData = await getTopMomentumGames(selectedCategory, seasonNum, 25);
+			const [topData, overviewData, seasonStats] = await Promise.all([
+				getTopMomentumGames(selectedCategory, seasonNum, 25),
+				getStatsOverview(seasonNum),
+				selectedSeason !== 'all' ? getSeasonStats(selectedSeason) : Promise.resolve(null)
+			]);
+
 			topGames = topData.games;
-
-			// Load overview stats
-			overview = await getStatsOverview(seasonNum);
-
-			// Load detailed stats if specific season selected
-			if (selectedSeason !== 'all') {
-				stats = await getSeasonStats(selectedSeason);
-			} else {
-				stats = null;
-			}
+			overview = overviewData;
+			stats = seasonStats;
 		} catch (e) {
 			error = e instanceof Error ? e.message : 'Failed to load stats';
 		} finally {

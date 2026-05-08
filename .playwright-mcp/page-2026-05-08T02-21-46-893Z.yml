@@ -1,0 +1,222 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Momentum Analyzer" [ref=e8] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e9]: Momentum Analyzer
+        - button "NFL" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: NFL
+          - img [ref=e13]
+      - button [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e22]:
+        - link "NFL Momentum" [ref=e23] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e24]: NFL Momentum
+        - navigation [ref=e25]:
+          - link "Games" [ref=e26] [cursor=pointer]:
+            - /url: /nfl
+          - link "Stats" [ref=e27] [cursor=pointer]:
+            - /url: /nfl/stats
+          - link "Search" [ref=e28] [cursor=pointer]:
+            - /url: /search
+          - link "Change Sport" [ref=e29] [cursor=pointer]:
+            - /url: /
+      - main [ref=e30]:
+        - generic [ref=e31]:
+          - link "Back to Games" [ref=e32] [cursor=pointer]:
+            - /url: /nfl
+            - img [ref=e33]
+            - text: Back to Games
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - generic [ref=e46]:
+                - generic [ref=e48]:
+                  - generic [ref=e49]:
+                    - generic [ref=e50]:
+                      - generic [ref=e51]:
+                        - img "DAL" [ref=e52]
+                        - generic [ref=e53]: DAL
+                      - generic [ref=e54]: "@"
+                      - generic [ref=e55]:
+                        - img "PHI" [ref=e56]
+                        - generic [ref=e57]: PHI
+                    - paragraph [ref=e58]:
+                      - text: Week 1, 2025
+                      - generic [ref=e59]: "Final: 20 - 24"
+                  - generic [ref=e60]:
+                    - generic [ref=e63]: PHI Momentum
+                    - generic [ref=e66]: DAL Momentum
+                    - generic [ref=e69]: Win Probability
+                - generic [ref=e71]:
+                  - generic [ref=e72]:
+                    - img "DAL" [ref=e73]
+                    - generic [ref=e74]: DAL
+                    - generic [ref=e75]: "20"
+                  - generic [ref=e77]: Final
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: "24"
+                    - generic [ref=e80]: PHI
+                    - img "PHI" [ref=e81]
+                - generic [ref=e83]:
+                  - generic [ref=e84]:
+                    - generic [ref=e85]: End Q1
+                    - generic [ref=e86]: 7 - 7
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: End Q2
+                    - generic [ref=e89]: 20 - 21
+                  - generic [ref=e90]:
+                    - generic [ref=e91]: End Q3
+                    - generic [ref=e92]: 20 - 24
+                  - generic [ref=e93]:
+                    - generic [ref=e94]: End Q4
+                    - generic [ref=e95]: 20 - 24
+              - button "Share / Export" [ref=e99] [cursor=pointer]:
+                - img [ref=e100]
+                - text: Share / Export
+            - generic [ref=e103]:
+              - heading "Key Momentum Plays" [level=4] [ref=e104]
+              - paragraph [ref=e105]: Hover to highlight on chart
+              - generic [ref=e106]:
+                - button "3rd Down Conversion, Big Play (32 yds, C.Lamb) Q1 · 12:22 -12.4" [ref=e107] [cursor=pointer]:
+                  - generic [ref=e109]:
+                    - generic [ref=e110]: 3rd Down Conversion, Big Play (32 yds, C.Lamb)
+                    - generic [ref=e111]: Q1 · 12:22
+                  - generic [ref=e112]: "-12.4"
+                - button "Rushing TD (J.Williams) Q1 · 11:52 -27.3" [ref=e113] [cursor=pointer]:
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: Rushing TD (J.Williams)
+                    - generic [ref=e117]: Q1 · 11:52
+                  - generic [ref=e118]: "-27.3"
+                - button "Rushing TD (J.Hurts), 3rd Down Conversion Q1 · 06:01 +24.2" [ref=e119] [cursor=pointer]:
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: Rushing TD (J.Hurts), 3rd Down Conversion
+                    - generic [ref=e123]: Q1 · 06:01
+                  - generic [ref=e124]: "+24.2"
+                - button "3rd Down Conversion, Big Play (26 yds, C.Lamb) Q1 · 03:01 -11.2" [ref=e125] [cursor=pointer]:
+                  - generic [ref=e127]:
+                    - generic [ref=e128]: 3rd Down Conversion, Big Play (26 yds, C.Lamb)
+                    - generic [ref=e129]: Q1 · 03:01
+                  - generic [ref=e130]: "-11.2"
+                - button "Rushing TD (J.Williams) Q2 · 15:00 -33.6" [ref=e131] [cursor=pointer]:
+                  - generic [ref=e133]:
+                    - generic [ref=e134]: Rushing TD (J.Williams)
+                    - generic [ref=e135]: Q2 · 15:00
+                  - generic [ref=e136]: "-33.6"
+                - button "Rushing TD (J.Hurts) Q2 · 06:58 +31.4" [ref=e137] [cursor=pointer]:
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: Rushing TD (J.Hurts)
+                    - generic [ref=e141]: Q2 · 06:58
+                  - generic [ref=e142]: "+31.4"
+                - button "Timeout by DAL Q2 · 05:26 0.0" [ref=e143] [cursor=pointer]:
+                  - generic [ref=e145]:
+                    - generic [ref=e146]: Timeout by DAL
+                    - generic [ref=e147]: Q2 · 05:26
+                  - generic [ref=e148]: "0.0"
+                - button "3rd Down Conversion, Explosive Play (51 yds, J.Dotson) Q2 · 01:53 +17.3" [ref=e149] [cursor=pointer]:
+                  - generic [ref=e151]:
+                    - generic [ref=e152]: 3rd Down Conversion, Explosive Play (51 yds, J.Dotson)
+                    - generic [ref=e153]: Q2 · 01:53
+                  - generic [ref=e154]: "+17.3"
+                - button "Rushing TD (S.Barkley) Q2 · 00:56 +26.9" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e157]:
+                    - generic [ref=e158]: Rushing TD (S.Barkley)
+                    - generic [ref=e159]: Q2 · 00:56
+                  - generic [ref=e160]: "+26.9"
+                - button "Timeout by DAL Q2 · 00:27 0.0" [ref=e161] [cursor=pointer]:
+                  - generic [ref=e163]:
+                    - generic [ref=e164]: Timeout by DAL
+                    - generic [ref=e165]: Q2 · 00:27
+                  - generic [ref=e166]: "0.0"
+                - button "Timeout by DAL Q2 · 00:15 0.0" [ref=e167] [cursor=pointer]:
+                  - generic [ref=e169]:
+                    - generic [ref=e170]: Timeout by DAL
+                    - generic [ref=e171]: Q2 · 00:15
+                  - generic [ref=e172]: "0.0"
+                - button "Timeout by PHI Q2 · 00:15 0.0" [ref=e173] [cursor=pointer]:
+                  - generic [ref=e175]:
+                    - generic [ref=e176]: Timeout by PHI
+                    - generic [ref=e177]: Q2 · 00:15
+                  - generic [ref=e178]: "0.0"
+                - button "Timeout by PHI Q2 · 00:03 0.0" [ref=e179] [cursor=pointer]:
+                  - generic [ref=e181]:
+                    - generic [ref=e182]: Timeout by PHI
+                    - generic [ref=e183]: Q2 · 00:03
+                  - generic [ref=e184]: "0.0"
+                - button "Explosive Play (49 yds, M.Sanders) Q3 · 06:21 -13.7" [ref=e185] [cursor=pointer]:
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: Explosive Play (49 yds, M.Sanders)
+                    - generic [ref=e189]: Q3 · 06:21
+                  - generic [ref=e190]: "-13.7"
+                - button "First Down, Penalty (12 yds) Q3 · 04:58 -11.0" [ref=e191] [cursor=pointer]:
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: First Down, Penalty (12 yds)
+                    - generic [ref=e195]: Q3 · 04:58
+                  - generic [ref=e196]: "-11.0"
+                - button "Fumble (M.Sanders, rec. Q.Mitchell) Q3 · 04:52 +31.9" [ref=e197] [cursor=pointer]:
+                  - generic [ref=e199]:
+                    - generic [ref=e200]: Fumble (M.Sanders, rec. Q.Mitchell)
+                    - generic [ref=e201]: Q3 · 04:52
+                  - generic [ref=e202]: "+31.9"
+                - button "Timeout by PHI Q4 · 08:26 0.0" [ref=e203] [cursor=pointer]:
+                  - generic [ref=e205]:
+                    - generic [ref=e206]: Timeout by PHI
+                    - generic [ref=e207]: Q4 · 08:26
+                  - generic [ref=e208]: "0.0"
+                - button "4th Down Stop Q4 · 02:00 +12.4" [ref=e209] [cursor=pointer]:
+                  - generic [ref=e211]:
+                    - generic [ref=e212]: 4th Down Stop
+                    - generic [ref=e213]: Q4 · 02:00
+                  - generic [ref=e214]: "+12.4"
+                - button "Timeout by DAL Q4 · 01:51 0.0" [ref=e215] [cursor=pointer]:
+                  - generic [ref=e217]:
+                    - generic [ref=e218]: Timeout by DAL
+                    - generic [ref=e219]: Q4 · 01:51
+                  - generic [ref=e220]: "0.0"
+                - button "Timeout by DAL Q4 · 01:45 0.0" [ref=e221] [cursor=pointer]:
+                  - generic [ref=e223]:
+                    - generic [ref=e224]: Timeout by DAL
+                    - generic [ref=e225]: Q4 · 01:45
+                  - generic [ref=e226]: "0.0"
+                - button "Timeout by DAL Q4 · 01:29 0.0" [ref=e227] [cursor=pointer]:
+                  - generic [ref=e229]:
+                    - generic [ref=e230]: Timeout by DAL
+                    - generic [ref=e231]: Q4 · 01:29
+                  - generic [ref=e232]: "0.0"
+          - generic [ref=e233]:
+            - heading "Game Summary" [level=3] [ref=e234]
+            - generic [ref=e235]:
+              - generic [ref=e237]:
+                - generic [ref=e238]: Final Momentum (Prediction Metric)
+                - generic [ref=e239]:
+                  - text: "Momentum predicted: DAL"
+                  - generic [ref=e240]: "✗ Incorrect (Winner: PHI)"
+              - generic [ref=e241]:
+                - generic [ref=e242]:
+                  - generic [ref=e243]: "-7.4"
+                  - generic [ref=e244]: PHI Final
+                - generic [ref=e245]:
+                  - generic [ref=e246]: "+7.4"
+                  - generic [ref=e247]: DAL Final
+            - generic [ref=e248]:
+              - generic [ref=e249]:
+                - generic [ref=e250]: "163"
+                - generic [ref=e251]: Total Plays
+              - generic [ref=e252]:
+                - generic [ref=e253]: "79.8"
+                - generic [ref=e254]: Max PHI Momentum
+              - generic [ref=e255]:
+                - generic [ref=e256]: "91.0"
+                - generic [ref=e257]: Max DAL Momentum
+              - generic [ref=e258]:
+                - generic [ref=e259]: "21"
+                - generic [ref=e260]: Big Momentum Swings
+            - generic [ref=e261]:
+              - generic [ref=e262]: Biggest Momentum Swing
+              - generic [ref=e263]: "Q2 - 15:00: Rushing TD (J.Williams) (-33.6 momentum)"
+      - paragraph [ref=e39]: NFL Momentum Analyzer - Data from nflfastR
+  - contentinfo [ref=e40]:
+    - paragraph [ref=e42]: NFL Momentum Analyzer - Data from nflfastR

@@ -1,0 +1,35 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - link "Momentum Analyzer" [ref=e8] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e9]: Momentum Analyzer
+        - button "NFL" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: NFL
+          - img [ref=e13]
+      - button [ref=e15] [cursor=pointer]:
+        - img [ref=e16]
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - generic [ref=e22]:
+        - link "NFL Momentum" [ref=e23] [cursor=pointer]:
+          - /url: /nfl
+          - generic [ref=e24]: NFL Momentum
+        - navigation [ref=e25]:
+          - link "Games" [ref=e26] [cursor=pointer]:
+            - /url: /nfl
+          - link "Stats" [ref=e27] [cursor=pointer]:
+            - /url: /nfl/stats
+          - link "Search" [ref=e28] [cursor=pointer]:
+            - /url: /search
+          - link "Change Sport" [ref=e29] [cursor=pointer]:
+            - /url: /
+      - main [ref=e30]:
+        - link "Back to Games" [ref=e32] [cursor=pointer]:
+          - /url: /nfl
+          - img [ref=e33]
+          - text: Back to Games
+      - paragraph [ref=e39]: NFL Momentum Analyzer - Data from nflfastR
+  - contentinfo [ref=e40]:
+    - paragraph [ref=e42]: NFL Momentum Analyzer - Data from nflfastR
