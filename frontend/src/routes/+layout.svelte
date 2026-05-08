@@ -52,7 +52,7 @@
 	}
 </script>
 
-<div class="min-h-screen" style="background-color: {THEME.bg};">
+<div class="min-h-screen flex flex-col" style="background-color: {THEME.bg};">
 	<!-- Header -->
 	<header style="background-color: {THEME.cardBg}; border-bottom: 1px solid {THEME.border};">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -254,12 +254,12 @@
 	{/if}
 
 	<!-- Main content -->
-	<main>
+	<main class="flex-1">
 		<slot />
 	</main>
 
 	<!-- Footer -->
-	<footer style="background-color: {THEME.cardBg}; border-top: 1px solid {THEME.grid};" class="mt-auto">
+	<footer style="background-color: {THEME.cardBg}; border-top: 1px solid {THEME.border};">
 		<div class="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
 			<p class="text-center text-sm" style="color: {THEME.textSecondary};">
 				NFL Momentum Analyzer - Data from nflfastR
