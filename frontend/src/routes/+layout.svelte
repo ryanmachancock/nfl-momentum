@@ -60,7 +60,7 @@
 				<div class="flex items-center space-x-4">
 					<a href="/{currentSportPath}" class="flex items-center space-x-2">
 						<span class="text-2xl font-bold" style="color: {THEME.text};">
-							{currentSport.name} Momentum
+							Momentum Analyzer
 						</span>
 					</a>
 
@@ -95,9 +95,9 @@
 							>
 								{#each SPORTS as sport}
 									<button
-										on:click={() => selectSport(sport.id)}
+										on:click={() => sport.enabled && selectSport(sport.id)}
 										class="w-full text-left px-4 py-2 text-sm transition-colors flex items-center space-x-2"
-										style="color: {sport.id === currentSport.id ? THEME.accentBlue : THEME.text};"
+										style="color: {sport.id === currentSport.id ? THEME.accentBlue : sport.enabled ? THEME.text : THEME.textSecondary}; cursor: {sport.enabled ? 'pointer' : 'default'}; opacity: {sport.enabled ? 1 : 0.6};"
 										onmouseenter={(e) => {
 											if (sport.id !== currentSport.id) {
 												e.currentTarget.style.backgroundColor = THEME.border;
