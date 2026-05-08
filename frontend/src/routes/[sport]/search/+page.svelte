@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import type { Game } from '$lib/api';
+	import { searchGames, type Game } from '$lib/api';
 
 	// Theme colors
 	const THEME = {
@@ -37,15 +37,7 @@
 		hasSearched = true;
 
 		try {
-			const response = await fetch(
-				`http://localhost:8000/api/games/search?q=${encodeURIComponent(searchQuery)}&limit=50`
-			);
-
-			if (!response.ok) {
-				throw new Error('Search failed');
-			}
-
-			const data = await response.json();
+			const data = await searchGames(searchQuery);
 			searchResults = data.games || [];
 		} catch (e) {
 			error = e instanceof Error ? e.message : 'Failed to search games';

@@ -29,9 +29,14 @@
 	onMount(async () => {
 		try {
 			seasonsData = await getSeasons();
-			// Default to most recent season
+			// Default to most recent season and week
 			if (seasonsData.seasons.length > 0 && !$selectedSeason) {
-				selectedSeason.set(seasonsData.seasons[0]);
+				const mostRecentSeason = seasonsData.seasons[0];
+				selectedSeason.set(mostRecentSeason);
+				const weeks = seasonsData.weeks_by_season[mostRecentSeason];
+				if (weeks?.length > 0) {
+					selectedWeek.set(weeks[weeks.length - 1]);
+				}
 			}
 		} catch (e) {
 			error = e instanceof Error ? e.message : 'Failed to load seasons';

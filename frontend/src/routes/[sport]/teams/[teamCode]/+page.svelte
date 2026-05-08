@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { getTeamLogoUrl } from '$lib/teamLogos';
-	import type { Game } from '$lib/api';
+	import { searchGames, type Game } from '$lib/api';
 
 	// Theme colors
 	const THEME = {
@@ -94,15 +94,7 @@
 		error = null;
 
 		try {
-			const response = await fetch(
-				`http://localhost:8000/api/games/search?q=${encodeURIComponent(teamCode)}&limit=100`
-			);
-
-			if (!response.ok) {
-				throw new Error('Failed to load team games');
-			}
-
-			const data = await response.json();
+			const data = await searchGames(teamCode);
 			games = (data.games || []).sort((a: Game, b: Game) => {
 				// Sort by season desc, then week desc
 				if (a.season !== b.season) return b.season - a.season;
