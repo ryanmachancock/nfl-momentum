@@ -14,7 +14,7 @@ router = APIRouter(prefix="/api/momentum", tags=["momentum"])
 
 
 @router.get("/{game_id}", response_model=MomentumResponse)
-def get_momentum(game_id: str, db: Session = Depends(get_db)):
+def get_momentum(game_id: str, db: Session = Depends(get_db), response: Response = None):
     """Get momentum data for a game."""
     game = db.query(Game).filter(Game.game_id == game_id).first()
 
@@ -40,6 +40,9 @@ def get_momentum(game_id: str, db: Session = Depends(get_db)):
     else:
         max_momentum = 0
         min_momentum = 0
+
+    if response and game.home_score is not None:
+        response.headers["Cache-Control"] = "public, max-age=3600"
 
     return MomentumResponse(
         game=GameResponse.model_validate(game),

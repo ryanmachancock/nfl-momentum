@@ -366,9 +366,6 @@ class MomentumCalculator:
                 is_significant=is_significant
             ))
 
-        # Commit momentum values to database
-        self.db.commit()
-
         return data_points
 
     def _detect_events(self, play: Play, home_team: str, away_team: str) -> list[MomentumEvent]:

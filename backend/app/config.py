@@ -9,10 +9,16 @@ class Settings(BaseSettings):
     # Server
     host: str = "0.0.0.0"
     port: int = 8000
-    debug: bool = True
+    debug: bool = False
 
     # CORS
     cors_origins: str = "http://localhost:5173,http://localhost:3000"
+
+    # Frontend URL for share links
+    frontend_url: str = "http://localhost:5173"
+
+    # Admin key for protected endpoints (empty = disabled)
+    admin_key: str = ""
 
     @property
     def cors_origins_list(self) -> list[str]:

@@ -1,14 +1,17 @@
 """
 API endpoints for sharing momentum graphs.
 """
-from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from nanoid import generate
 
+from ..config import get_settings
 from ..database import get_db
 from ..models import Game, SharedGraph
 from ..schemas import GameResponse, MomentumResponse, ShareResponse
 from ..services import MomentumCalculator
+
+settings = get_settings()
 
 router = APIRouter(prefix="/api/share", tags=["share"])
 
@@ -22,7 +25,6 @@ def generate_share_code() -> str:
 @router.post("/{game_id}", response_model=ShareResponse)
 def create_share_link(
     game_id: str,
-    request: Request,
     db: Session = Depends(get_db)
 ):
     """Create a shareable link for a game's momentum graph."""
@@ -46,10 +48,7 @@ def create_share_link(
         db.add(shared)
         db.commit()
 
-    # Build share URL
-    base_url = str(request.base_url).rstrip('/')
-    # Frontend share path
-    share_url = f"{base_url.replace(':8000', ':5173')}/s/{share_code}"
+    share_url = f"{settings.frontend_url}/s/{share_code}"
 
     return ShareResponse(
         share_code=share_code,
