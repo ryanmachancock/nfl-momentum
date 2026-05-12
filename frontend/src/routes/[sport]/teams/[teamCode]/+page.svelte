@@ -162,19 +162,19 @@
 	</a>
 
 	<!-- Team Header -->
-	<div class="mb-8 rounded-xl p-8" style="background-color: {THEME.cardBg};">
-		<div class="flex items-center gap-6">
+	<div class="mb-8 rounded-xl p-4 sm:p-8" style="background-color: {THEME.cardBg};">
+		<div class="flex items-center gap-3 sm:gap-6">
 			<img
 				src={getTeamLogoUrl(teamCode)}
 				alt={teamCode}
-				class="w-24 h-24 object-contain"
+				class="w-16 h-16 sm:w-24 sm:h-24 object-contain flex-shrink-0"
 				onerror="this.style.display='none'"
 			/>
-			<div>
-				<h1 class="text-4xl font-bold mb-2" style="color: {THEME.text};">
+			<div class="min-w-0">
+				<h1 class="text-xl sm:text-4xl font-bold mb-1 sm:mb-2 break-words" style="color: {THEME.text};">
 					{teamName}
 				</h1>
-				<div class="flex items-center gap-4 text-lg">
+				<div class="flex items-center gap-2 sm:gap-4 text-sm sm:text-lg">
 					<span style="color: {THEME.textSecondary};">{teamCode.toUpperCase()}</span>
 					{#if !loading && totalGames > 0}
 						<span style="color: {THEME.border};">•</span>
@@ -207,22 +207,22 @@
 		</div>
 	{:else}
 		<!-- Stats Cards -->
-		<div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-			<div class="p-6 rounded-xl" style="background-color: {THEME.cardBg};">
-				<div class="text-sm mb-1" style="color: {THEME.textSecondary};">Total Games</div>
-				<div class="text-3xl font-bold" style="color: {THEME.text};">{totalGames}</div>
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-8">
+			<div class="p-4 sm:p-6 rounded-xl" style="background-color: {THEME.cardBg};">
+				<div class="text-xs sm:text-sm mb-1" style="color: {THEME.textSecondary};">Total Games</div>
+				<div class="text-2xl sm:text-3xl font-bold" style="color: {THEME.text};">{totalGames}</div>
 			</div>
-			<div class="p-6 rounded-xl" style="background-color: {THEME.cardBg};">
-				<div class="text-sm mb-1" style="color: {THEME.textSecondary};">Wins</div>
-				<div class="text-3xl font-bold" style="color: {THEME.accentGreen};">{wins}</div>
+			<div class="p-4 sm:p-6 rounded-xl" style="background-color: {THEME.cardBg};">
+				<div class="text-xs sm:text-sm mb-1" style="color: {THEME.textSecondary};">Wins</div>
+				<div class="text-2xl sm:text-3xl font-bold" style="color: {THEME.accentGreen};">{wins}</div>
 			</div>
-			<div class="p-6 rounded-xl" style="background-color: {THEME.cardBg};">
-				<div class="text-sm mb-1" style="color: {THEME.textSecondary};">Losses</div>
-				<div class="text-3xl font-bold" style="color: {THEME.accentRed};">{losses}</div>
+			<div class="p-4 sm:p-6 rounded-xl" style="background-color: {THEME.cardBg};">
+				<div class="text-xs sm:text-sm mb-1" style="color: {THEME.textSecondary};">Losses</div>
+				<div class="text-2xl sm:text-3xl font-bold" style="color: {THEME.accentRed};">{losses}</div>
 			</div>
-			<div class="p-6 rounded-xl" style="background-color: {THEME.cardBg};">
-				<div class="text-sm mb-1" style="color: {THEME.textSecondary};">Win Rate</div>
-				<div class="text-3xl font-bold" style="color: {THEME.accentBlue};">
+			<div class="p-4 sm:p-6 rounded-xl" style="background-color: {THEME.cardBg};">
+				<div class="text-xs sm:text-sm mb-1" style="color: {THEME.textSecondary};">Win Rate</div>
+				<div class="text-2xl sm:text-3xl font-bold" style="color: {THEME.accentBlue};">
 					{totalGames > 0 ? ((wins / totalGames) * 100).toFixed(0) : 0}%
 				</div>
 			</div>

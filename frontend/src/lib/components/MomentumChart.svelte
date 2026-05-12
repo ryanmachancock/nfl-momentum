@@ -409,32 +409,32 @@
 
 <div class="chart-container rounded-xl overflow-hidden" style="background-color: {THEME.cardBg};">
 	<!-- Header -->
-	<div class="p-6 pb-4">
-		<div class="flex flex-col sm:flex-row justify-between items-start gap-3">
-			<div>
+	<div class="p-4 sm:p-6 pb-4">
+		<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+			<div class="min-w-0">
 				<!-- Team logos and matchup -->
-				<div class="flex items-center gap-4 mb-2">
+				<div class="flex items-center gap-2 sm:gap-4 mb-2 flex-wrap">
 					<div class="flex items-center gap-2">
 						<img
 							src={getTeamLogoUrl(game.away_team)}
 							alt={game.away_team}
-							class="w-10 h-10 object-contain"
+							class="w-8 h-8 sm:w-10 sm:h-10 object-contain"
 							onerror="this.style.display='none'"
 						/>
-						<span class="text-2xl font-bold" style="color: {THEME.text};">{game.away_team}</span>
+						<span class="text-xl sm:text-2xl font-bold" style="color: {THEME.text};">{game.away_team}</span>
 					</div>
-					<span class="text-xl" style="color: {THEME.textSecondary};">@</span>
+					<span class="text-lg sm:text-xl" style="color: {THEME.textSecondary};">@</span>
 					<div class="flex items-center gap-2">
 						<img
 							src={getTeamLogoUrl(game.home_team)}
 							alt={game.home_team}
-							class="w-10 h-10 object-contain"
+							class="w-8 h-8 sm:w-10 sm:h-10 object-contain"
 							onerror="this.style.display='none'"
 						/>
-						<span class="text-2xl font-bold" style="color: {THEME.text};">{game.home_team}</span>
+						<span class="text-xl sm:text-2xl font-bold" style="color: {THEME.text};">{game.home_team}</span>
 					</div>
 				</div>
-				<p style="color: {THEME.textSecondary};" class="mt-1">
+				<p style="color: {THEME.textSecondary};" class="mt-1 text-sm sm:text-base">
 					Week {game.week}, {game.season}
 					{#if game.home_score !== null}
 						<span class="ml-2 font-semibold" style="color: {THEME.accentBlue};">
@@ -443,25 +443,32 @@
 					{/if}
 				</p>
 			</div>
-			<div class="flex flex-col gap-2 text-sm">
+			<div class="flex flex-row md:flex-col gap-3 md:gap-2 text-xs sm:text-sm flex-wrap">
 				<div class="flex items-center">
 					<div
-						class="w-4 h-4 rounded mr-2"
+						class="w-4 h-4 rounded mr-2 flex-shrink-0"
 						style="background-color: {getTeamColor(game.home_team, DEFAULT_HOME_COLOR)};"
 					></div>
-					<span style="color: {THEME.textSecondary};">{game.home_team} Momentum</span>
+					<span style="color: {THEME.textSecondary};">{game.home_team} Lead</span>
 				</div>
 				<div class="flex items-center">
 					<div
-						class="w-4 h-4 rounded mr-2"
+						class="w-4 h-4 rounded mr-2 flex-shrink-0"
 						style="background-color: {getTeamColor(game.away_team, DEFAULT_AWAY_COLOR)};"
 					></div>
-					<span style="color: {THEME.textSecondary};">{game.away_team} Momentum</span>
+					<span style="color: {THEME.textSecondary};">{game.away_team} Lead</span>
+				</div>
+				<div class="flex items-center">
+					<div
+						class="w-4 h-1 rounded-sm mr-2 flex-shrink-0"
+						style="background-color: #ffffff;"
+					></div>
+					<span style="color: {THEME.textSecondary};">Momentum</span>
 				</div>
 				{#if showWinProbability}
 					<div class="flex items-center">
 						<div
-							class="w-4 h-0.5 mr-2 border-t-2 border-dashed"
+							class="w-4 h-0.5 mr-2 border-t-2 border-dashed flex-shrink-0"
 							style="border-color: #ffd700;"
 						></div>
 						<span style="color: {THEME.textSecondary};">Win Probability</span>
@@ -472,45 +479,45 @@
 	</div>
 
 	<!-- Interactive Scoreboard -->
-	<div class="px-6 pb-4">
-		<div class="flex items-center justify-center gap-8 p-4 rounded-lg" style="background-color: {THEME.bg};">
+	<div class="px-4 sm:px-6 pb-4">
+		<div class="flex items-center justify-between sm:justify-center gap-2 sm:gap-8 p-3 sm:p-4 rounded-lg" style="background-color: {THEME.bg};">
 			<!-- Away Team Score -->
-			<div class="flex items-center gap-3">
+			<div class="flex items-center gap-1 sm:gap-3 min-w-0">
 				<img
 					src={getTeamLogoUrl(game.away_team)}
 					alt={game.away_team}
-					class="w-8 h-8 object-contain"
+					class="w-6 h-6 sm:w-8 sm:h-8 object-contain flex-shrink-0"
 					onerror="this.style.display='none'"
 				/>
-				<span class="text-lg font-semibold" style="color: {THEME.text};">{game.away_team}</span>
-				<span class="text-3xl font-bold tabular-nums" style="color: {getTeamColor(game.away_team, DEFAULT_AWAY_COLOR)};">
+				<span class="text-sm sm:text-lg font-semibold" style="color: {THEME.text};">{game.away_team}</span>
+				<span class="text-2xl sm:text-3xl font-bold tabular-nums" style="color: {getTeamColor(game.away_team, DEFAULT_AWAY_COLOR)};">
 					{hoveredScore ? hoveredScore.away : (game.away_score ?? 0)}
 				</span>
 			</div>
 
 			<!-- Game Time -->
-			<div class="text-center min-w-[100px]">
+			<div class="text-center min-w-[60px] sm:min-w-[100px] flex-shrink-0">
 				{#if hoveredScore}
-					<div class="text-sm font-medium" style="color: {THEME.accentBlue};">
+					<div class="text-xs sm:text-sm font-medium" style="color: {THEME.accentBlue};">
 						Q{hoveredScore.quarter} · {hoveredScore.time}
 					</div>
 				{:else}
-					<div class="text-sm font-medium" style="color: {THEME.textSecondary};">
+					<div class="text-xs sm:text-sm font-medium" style="color: {THEME.textSecondary};">
 						Final
 					</div>
 				{/if}
 			</div>
 
 			<!-- Home Team Score -->
-			<div class="flex items-center gap-3">
-				<span class="text-3xl font-bold tabular-nums" style="color: {getTeamColor(game.home_team, DEFAULT_HOME_COLOR)};">
+			<div class="flex items-center gap-1 sm:gap-3 min-w-0">
+				<span class="text-2xl sm:text-3xl font-bold tabular-nums" style="color: {getTeamColor(game.home_team, DEFAULT_HOME_COLOR)};">
 					{hoveredScore ? hoveredScore.home : (game.home_score ?? 0)}
 				</span>
-				<span class="text-lg font-semibold" style="color: {THEME.text};">{game.home_team}</span>
+				<span class="text-sm sm:text-lg font-semibold" style="color: {THEME.text};">{game.home_team}</span>
 				<img
 					src={getTeamLogoUrl(game.home_team)}
 					alt={game.home_team}
-					class="w-8 h-8 object-contain"
+					class="w-6 h-6 sm:w-8 sm:h-8 object-contain flex-shrink-0"
 					onerror="this.style.display='none'"
 				/>
 			</div>
@@ -520,14 +527,14 @@
 
 	<!-- Quarter Scores Timeline -->
 	{#if quarterScores.length > 0}
-		<div class="px-6 pb-4">
-			<div class="flex justify-around items-center">
+		<div class="px-4 sm:px-6 pb-4">
+			<div class="flex justify-between sm:justify-around items-center gap-1 sm:gap-2 overflow-x-auto">
 				{#each quarterScores as qs}
-					<div class="text-center px-3 py-2 rounded" style="background-color: {THEME.bg};">
-						<div class="text-xs font-medium mb-1" style="color: {THEME.textSecondary};">
+					<div class="text-center px-2 sm:px-3 py-2 rounded flex-shrink-0" style="background-color: {THEME.bg};">
+						<div class="text-[10px] sm:text-xs font-medium mb-1 whitespace-nowrap" style="color: {THEME.textSecondary};">
 							{qs.quarter <= 4 ? `End Q${qs.quarter}` : `End OT${qs.quarter - 4}`}
 						</div>
-						<div class="text-sm font-semibold" style="color: {THEME.text};">
+						<div class="text-xs sm:text-sm font-semibold whitespace-nowrap" style="color: {THEME.text};">
 							<span style="color: {getTeamColor(game.away_team, DEFAULT_AWAY_COLOR)};">{qs.away}</span>
 							<span style="color: {THEME.textSecondary};"> - </span>
 							<span style="color: {getTeamColor(game.home_team, DEFAULT_HOME_COLOR)};">{qs.home}</span>
@@ -539,7 +546,7 @@
 	{/if}
 
 	<!-- Chart -->
-	<div class="h-96 px-4 pb-6">
+	<div class="h-80 sm:h-96 px-2 sm:px-4 pb-6">
 		<canvas bind:this={canvas}></canvas>
 	</div>
 </div>

@@ -154,22 +154,24 @@
 				<div class="rounded-xl p-4 sticky top-4" style="background-color: {THEME.cardBg};">
 					<h4 class="text-md font-semibold mb-2" style="color: {THEME.text};">Key Momentum Plays</h4>
 					<p class="text-xs mb-3" style="color: {THEME.textSecondary};">
-						Hover to highlight on chart
+						Tap a play to highlight it on the chart
 					</p>
 					<div class="space-y-2 max-h-[500px] overflow-y-auto pr-1">
 						{#each significantPlays as play}
 							{@const isHomePlay = play.momentum_delta > 0}
 							{@const isHighlighted = hoveredPlayId === play.play_id}
 							<div
-								class="flex items-center gap-2 p-2 rounded-lg transition-all cursor-pointer"
+								class="flex items-center gap-2 p-2 rounded-lg transition-all cursor-pointer focus:outline-none focus-visible:ring-2"
 								style="background-color: {isHighlighted ? (isHomePlay ? THEME.accentGreen + '30' : THEME.accentRed + '30') : THEME.bg};
-								       border: 2px solid {isHighlighted ? (isHomePlay ? THEME.accentGreen : THEME.accentRed) : 'transparent'};"
+								       border: 2px solid {isHighlighted ? (isHomePlay ? THEME.accentGreen : THEME.accentRed) : 'transparent'};
+								       --tw-ring-color: {THEME.accentBlue};"
 								on:mouseenter={() => handleListItemHover(play.play_id)}
 								on:mouseleave={() => handleListItemHover(null)}
+								on:click={() => handleListItemHover(play.play_id)}
 								role="button"
 								tabindex="0"
-								on:focus={() => handleListItemHover(play.play_id)}
-								on:blur={() => handleListItemHover(null)}
+								aria-pressed={isHighlighted}
+								on:keydown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleListItemHover(hoveredPlayId === play.play_id ? null : play.play_id); } }}
 							>
 								<div
 									class="w-2.5 h-2.5 rounded-full flex-shrink-0 transition-all"

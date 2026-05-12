@@ -151,7 +151,7 @@
 			{#each games as game}
 				{@const winner = getWinner(game)}
 				<button
-					class="w-full text-left p-4 rounded-lg border transition-all hover:scale-[1.01]"
+					class="w-full text-left p-3 sm:p-4 rounded-lg border transition-all hover:scale-[1.01]"
 					style="background-color: {THEME.bg}; border-color: {THEME.border};"
 					on:mouseenter={(e) => {
 						e.currentTarget.style.backgroundColor = THEME.cardHover;
@@ -163,15 +163,15 @@
 					}}
 					on:click={() => onGameSelect(game)}
 				>
-					<div class="flex items-center justify-between">
+					<div class="flex items-center justify-between gap-3">
 						<!-- Teams -->
-						<div class="flex items-center gap-6">
+						<div class="flex items-center gap-2 sm:gap-4 min-w-0 flex-1">
 							<!-- Away Team -->
-							<div class="flex items-center gap-3 min-w-[120px]">
+							<div class="flex items-center gap-2 min-w-0">
 								<img
 									src={getTeamLogoUrl(game.away_team)}
 									alt={game.away_team}
-									class="w-8 h-8 object-contain"
+									class="w-7 h-7 sm:w-8 sm:h-8 object-contain flex-shrink-0"
 									onerror="this.style.display='none'"
 								/>
 								<span
@@ -182,14 +182,14 @@
 								</span>
 							</div>
 
-							<span style="color: {THEME.textSecondary};">@</span>
+							<span class="flex-shrink-0" style="color: {THEME.textSecondary};">@</span>
 
 							<!-- Home Team -->
-							<div class="flex items-center gap-3 min-w-[120px]">
+							<div class="flex items-center gap-2 min-w-0">
 								<img
 									src={getTeamLogoUrl(game.home_team)}
 									alt={game.home_team}
-									class="w-8 h-8 object-contain"
+									class="w-7 h-7 sm:w-8 sm:h-8 object-contain flex-shrink-0"
 									onerror="this.style.display='none'"
 								/>
 								<span
@@ -202,14 +202,14 @@
 						</div>
 
 						<!-- Score & Date -->
-						<div class="text-right">
+						<div class="text-right flex-shrink-0">
 							{#if game.home_score !== null}
-								<div class="font-bold text-lg tabular-nums" style="color: {THEME.text};">
+								<div class="font-bold text-base sm:text-lg tabular-nums whitespace-nowrap" style="color: {THEME.text};">
 									{formatScore(game)}
 								</div>
 							{/if}
 							{#if game.game_date}
-								<div class="text-sm" style="color: {THEME.textSecondary};">
+								<div class="text-xs sm:text-sm whitespace-nowrap" style="color: {THEME.textSecondary};">
 									{new Date(game.game_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
 								</div>
 							{/if}

@@ -61,7 +61,7 @@
 		});
 	}
 
-	function handleKeyPress(event: KeyboardEvent) {
+	function handleKeyDown(event: KeyboardEvent) {
 		if (event.key === 'Enter') {
 			handleSearch();
 		}
@@ -83,13 +83,13 @@
 
 	<!-- Search Bar -->
 	<div class="mb-8">
-		<div class="flex gap-3">
+		<div class="flex flex-col sm:flex-row gap-3">
 			<div class="flex-1 relative">
 				<input
 					type="text"
 					bind:value={searchQuery}
-					on:keypress={handleKeyPress}
-					placeholder="Search by team name (e.g., Chiefs, Ravens, KC, BAL)..."
+					on:keydown={handleKeyDown}
+					placeholder="Search by team (e.g., Chiefs, KC)"
 					class="w-full px-4 py-3 pl-12 rounded-lg border focus:outline-none focus:ring-2"
 					style="background-color: {THEME.cardBg};
 					       color: {THEME.text};

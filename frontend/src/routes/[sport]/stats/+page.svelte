@@ -157,30 +157,30 @@
 
 	<!-- Overview Stats -->
 	{#if overview && !loading}
-		<div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
-			<div class="rounded-xl p-6" style="background-color: {THEME.cardBg};">
-				<div class="text-3xl font-bold mb-1" style="color: {THEME.text};">
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6">
+			<div class="rounded-xl p-4 sm:p-6" style="background-color: {THEME.cardBg};">
+				<div class="text-2xl sm:text-3xl font-bold mb-1" style="color: {THEME.text};">
 					{overview.total_games.toLocaleString()}
 				</div>
-				<div class="text-sm" style="color: {THEME.textSecondary};">Games Analyzed</div>
+				<div class="text-xs sm:text-sm" style="color: {THEME.textSecondary};">Games Analyzed</div>
 			</div>
-			<div class="rounded-xl p-6" style="background-color: {THEME.cardBg};">
-				<div class="text-3xl font-bold mb-1" style="color: {THEME.accentGreen};">
+			<div class="rounded-xl p-4 sm:p-6" style="background-color: {THEME.cardBg};">
+				<div class="text-2xl sm:text-3xl font-bold mb-1" style="color: {THEME.accentGreen};">
 					{overview.accuracy_percentage}%
 				</div>
-				<div class="text-sm" style="color: {THEME.textSecondary};">Prediction Accuracy</div>
+				<div class="text-xs sm:text-sm" style="color: {THEME.textSecondary};">Prediction Accuracy</div>
 			</div>
-			<div class="rounded-xl p-6" style="background-color: {THEME.cardBg};">
-				<div class="text-3xl font-bold mb-1" style="color: {THEME.accentBlue};">
+			<div class="rounded-xl p-4 sm:p-6" style="background-color: {THEME.cardBg};">
+				<div class="text-2xl sm:text-3xl font-bold mb-1" style="color: {THEME.accentBlue};">
 					{overview.correct_predictions.toLocaleString()}
 				</div>
-				<div class="text-sm" style="color: {THEME.textSecondary};">Correct Predictions</div>
+				<div class="text-xs sm:text-sm" style="color: {THEME.textSecondary};">Correct Predictions</div>
 			</div>
-			<div class="rounded-xl p-6" style="background-color: {THEME.cardBg};">
-				<div class="text-3xl font-bold mb-1" style="color: {THEME.text};">
+			<div class="rounded-xl p-4 sm:p-6" style="background-color: {THEME.cardBg};">
+				<div class="text-2xl sm:text-3xl font-bold mb-1" style="color: {THEME.text};">
 					{overview.home_wins} - {overview.away_wins}
 				</div>
-				<div class="text-sm" style="color: {THEME.textSecondary};">Home - Away Wins</div>
+				<div class="text-xs sm:text-sm" style="color: {THEME.textSecondary};">Home - Away Wins</div>
 			</div>
 		</div>
 	{/if}
@@ -203,7 +203,7 @@
 		</div>
 	{:else}
 		<!-- Top Games List -->
-		<div class="rounded-xl p-6" style="background-color: {THEME.cardBg};">
+		<div class="rounded-xl p-4 sm:p-6" style="background-color: {THEME.cardBg};">
 			<div class="flex items-center justify-between mb-4">
 				<div>
 					<h2 class="text-xl font-semibold" style="color: {THEME.text};">
@@ -223,7 +223,59 @@
 					No games found for the selected criteria
 				</div>
 			{:else}
-				<div class="overflow-x-auto">
+				<!-- Mobile card list -->
+				<div class="md:hidden space-y-3">
+					{#each topGames as game, index}
+						{@const prediction = getPredictionResult(game)}
+						<button
+							class="w-full text-left p-4 rounded-lg border transition-colors"
+							style="background-color: {THEME.bg}; border-color: {THEME.grid};"
+							on:click={() => viewGame(game.game_id)}
+						>
+							<div class="flex items-center justify-between mb-2">
+								<div class="flex items-center gap-2">
+									<span class="text-sm font-semibold" style="color: {index < 3 ? THEME.accentYellow : THEME.textSecondary};">
+										#{index + 1}
+										{#if index === 0}🏆{:else if index === 1}🥈{:else if index === 2}🥉{/if}
+									</span>
+									<span class="font-semibold text-sm" style="color: {THEME.text};">
+										{game.away_team} @ {game.home_team}
+									</span>
+								</div>
+								{#if prediction === 'correct'}
+									<span class="text-xs px-2 py-0.5 rounded flex-shrink-0" style="background-color: {THEME.accentGreen}20; color: {THEME.accentGreen};">Correct</span>
+								{:else if prediction === 'incorrect'}
+									<span class="text-xs px-2 py-0.5 rounded flex-shrink-0" style="background-color: {THEME.accentRed}20; color: {THEME.accentRed};">Wrong</span>
+								{/if}
+							</div>
+							<div class="flex items-center justify-between text-xs mb-2" style="color: {THEME.textSecondary};">
+								<span>Week {game.week}, {game.season}</span>
+								<span class="font-bold tabular-nums" style="color: {THEME.text};">
+									{game.away_score ?? '-'} - {game.home_score ?? '-'}
+								</span>
+							</div>
+							<div class="flex items-center justify-between text-xs">
+								<span style="color: {THEME.textSecondary};">{selectedCategory === 'swings' ? 'Max Swing' : 'Volatility'}</span>
+								<span class="font-bold" style="color: {THEME.accentYellow};">
+									{selectedCategory === 'swings'
+										? game.max_swing?.toFixed(1) || '-'
+										: game.total_volatility?.toFixed(1) || '-'}
+								</span>
+							</div>
+							<div class="mt-2 flex flex-wrap gap-1.5">
+								<span class="text-xs px-2 py-0.5 rounded" style="background-color: {THEME.accentGreen}20; color: {THEME.accentGreen};">
+									{game.home_team} {game.final_home_momentum > 0 ? '+' : ''}{game.final_home_momentum?.toFixed(1) || '0'}
+								</span>
+								<span class="text-xs px-2 py-0.5 rounded" style="background-color: {THEME.accentRed}20; color: {THEME.accentRed};">
+									{game.away_team} {game.final_away_momentum > 0 ? '+' : ''}{game.final_away_momentum?.toFixed(1) || '0'}
+								</span>
+							</div>
+						</button>
+					{/each}
+				</div>
+
+				<!-- Desktop table -->
+				<div class="hidden md:block overflow-x-auto">
 					<table class="w-full">
 						<thead>
 							<tr style="border-bottom: 1px solid {THEME.grid};">

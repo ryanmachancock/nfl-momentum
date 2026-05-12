@@ -9,7 +9,7 @@ const ESPN_TEAM_IDS: Record<string, string> = {
 	CAR: '29', CHI: '3', CIN: '4', CLE: '5',
 	DAL: '6', DEN: '7', DET: '8', GB: '9',
 	HOU: '34', IND: '11', JAX: '30', KC: '12',
-	LA: '14', LAC: '24', LV: '13', MIA: '15',
+	LA: '14', LAR: '14', LAC: '24', LV: '13', MIA: '15',
 	MIN: '16', NE: '17', NO: '18', NYG: '19',
 	NYJ: '20', PHI: '21', PIT: '23', SEA: '26',
 	SF: '25', TB: '27', TEN: '10', WAS: '28',

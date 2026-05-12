@@ -160,10 +160,10 @@
 						<h2 class="text-xl font-semibold mb-4" style="color: {THEME.text};">
 							{division}
 						</h2>
-						<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+						<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
 							{#each divisionTeams as team}
 								<button
-									class="p-6 rounded-xl border-2 transition-all text-center"
+									class="p-3 sm:p-6 rounded-xl border-2 transition-all text-center"
 									style="background-color: {THEME.cardBg}; border-color: {THEME.border};"
 									on:mouseenter={(e) => {
 										e.currentTarget.style.borderColor = THEME.accentBlue;
@@ -178,13 +178,13 @@
 									<img
 										src={getTeamLogoUrl(team)}
 										alt={team}
-										class="w-20 h-20 mx-auto mb-3 object-contain"
+										class="w-14 h-14 sm:w-20 sm:h-20 mx-auto mb-2 sm:mb-3 object-contain"
 										onerror="this.style.display='none'"
 									/>
-									<div class="font-bold text-lg mb-1" style="color: {THEME.text};">
+									<div class="font-bold text-base sm:text-lg mb-1" style="color: {THEME.text};">
 										{team}
 									</div>
-									<div class="text-sm" style="color: {THEME.textSecondary};">
+									<div class="text-xs sm:text-sm" style="color: {THEME.textSecondary};">
 										{TEAM_NAMES[team]}
 									</div>
 								</button>
@@ -196,10 +196,10 @@
 		</div>
 	{:else}
 		<!-- Show selected division only -->
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+		<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
 			{#each filteredTeams as team}
 				<button
-					class="p-6 rounded-xl border-2 transition-all text-center"
+					class="p-3 sm:p-6 rounded-xl border-2 transition-all text-center"
 					style="background-color: {THEME.cardBg}; border-color: {THEME.border};"
 					on:mouseenter={(e) => {
 						e.currentTarget.style.borderColor = THEME.accentBlue;
@@ -214,13 +214,13 @@
 					<img
 						src={getTeamLogoUrl(team)}
 						alt={team}
-						class="w-20 h-20 mx-auto mb-3 object-contain"
+						class="w-14 h-14 sm:w-20 sm:h-20 mx-auto mb-2 sm:mb-3 object-contain"
 						onerror="this.style.display='none'"
 					/>
-					<div class="font-bold text-lg mb-1" style="color: {THEME.text};">
+					<div class="font-bold text-base sm:text-lg mb-1" style="color: {THEME.text};">
 						{team}
 					</div>
-					<div class="text-sm" style="color: {THEME.textSecondary};">
+					<div class="text-xs sm:text-sm" style="color: {THEME.textSecondary};">
 						{TEAM_NAMES[team]}
 					</div>
 				</button>
