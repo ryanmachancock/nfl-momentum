@@ -57,9 +57,9 @@
 	<header style="background-color: {THEME.cardBg}; border-bottom: 1px solid {THEME.border};">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex justify-between items-center h-16">
-				<div class="flex items-center space-x-4">
-					<a href="/{currentSportPath}" class="flex items-center space-x-2">
-						<span class="text-2xl font-bold" style="color: {THEME.text};">
+				<div class="flex items-center space-x-2 sm:space-x-4 min-w-0">
+					<a href="/{currentSportPath}" class="flex items-center space-x-2 min-w-0">
+						<span class="text-lg sm:text-2xl font-bold whitespace-nowrap" style="color: {THEME.text};">
 							Momentum Analyzer
 						</span>
 					</a>
