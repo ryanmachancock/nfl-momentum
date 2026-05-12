@@ -42,4 +42,9 @@ htmlcov/
 
 # Claude Code
 .claude/settings.local.json
+
+# Test/debug screenshots
 .playwright-mcp/
+mobile-*.png
+qa-*.png
+verify-*.png
